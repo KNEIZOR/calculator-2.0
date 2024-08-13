@@ -1,0 +1,37 @@
+.numbers__wrapper{
+    top: 40%;
+    position: absolute;
+    display: flex;
+}
+
+.numbers__wrapper button{
+    width: 50px;
+    height: 50px;
+    margin: 5px 30px 20px 30px;
+    font-size: 24pt;
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 1s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.numbers__wrapper button:hover {
+    filter: invert(70%);
+    transition: 1s;
+}
+
+.numbers__wrapper.dark button, .buttons.dark button i{
+    color: white;
+    transition: 1s;
+}
+
+.reset{
+    width: 150px;
+}
+
+@media screen and (max-width: 510px) {
+    .numbers__wrapper button{
+        margin: 0;
+    }
+}
